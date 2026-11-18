@@ -33,4 +33,52 @@ The dataset contains patient information such as age, gender, admission type, di
 ### 3. Machine Learning Model
 - Used Logistic Regression for readmission prediction.
 - Performed data preprocessing and feature encoding.
-- Applied class balancing to handle the difference between
+- Applied class balancing to handle the difference between readmitted and non-readmitted records.
+- Tested different classification thresholds to improve recall.
+
+### 4. Power BI Dashboard
+Created an interactive dashboard to show:
+- Total hospital encounters
+- Overall readmission rate
+- Readmitted patient count
+- Readmission rates by age group, gender, race, and admission type
+- Readmission trends based on previous hospital visits and time in hospital
+- Primary diagnosis and discharge-related insights
+
+## Model Results
+
+The final Logistic Regression model was evaluated using a classification threshold of 0.4.
+
+| Metric | Result |
+|---|---:|
+| Precision | 13.78% |
+| Recall | 76.66% |
+| F1-Score | 23.36% |
+
+The mentor challenge required at least 75% recall for the positive class. The model achieved **76.66% recall**, meeting the required target.
+
+## Tools and Technologies
+
+- Python
+- Google Colab
+- Pandas and NumPy
+- Matplotlib and Seaborn
+- Scikit-learn
+- Power BI
+- Jupyter Notebook
+
+## Project Files
+
+- `Hospital_Patient_Readmission_Analysis.ipynb` – Python analysis and machine learning work
+- `Hospital_Readmission_Analysis.pbix` – Power BI dashboard file
+- `Hospital_Readmission_Analysis.pdf` – Exported dashboard report
+
+## Conclusion
+
+Through this project, I explored hospital patient data, identified factors associated with readmission, and developed a Logistic Regression model to predict 30-day readmission.
+
+I also created a Power BI dashboard to make the analysis easier to understand.
+
+This project helped me gain practical experience in data analysis, machine learning, and data visualization.
+
+*Note: This is an academic data analytics project. The model is not intended for clinical decision-making.*
